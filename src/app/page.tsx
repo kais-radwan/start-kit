@@ -1,7 +1,8 @@
 import CopyCode from "@/components/copy-code";
 import Navbar from "@/components/navbar";
 import { GridBackground } from "@/components/ui/backgrounds/grid";
-import { Code } from "@nextui-org/react";
+import { Button, Code } from "@nextui-org/react";
+import { IconGitFork } from "@tabler/icons-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
             Next.js Startkit
           </h1>
-          <p className="text-sm md:text-base opacity-80 w-[98%] md:w-[80%] lg:w-[60%] text-center mb-14">
+          <p className="text-sm md:text-base opacity-80 w-[98%] md:w-[80%] lg:w-[60%] text-center">
             Kickstart your Next.js project with a{" "}
             <Code
               color="success"
@@ -26,11 +27,23 @@ export default function Home() {
               git clone
             </Code>
             <br />
-            <br /> Typescript, Tailwindcss, Shadcn, NextUI, Sonner toast notifications, dark & light modes,
-            Framer motion, and background patterns.
+            <br /> Typescript, Tailwindcss, Shadcn, NextUI, Sonner toast
+            notifications, dark & light modes, Framer motion, and background
+            patterns.
           </p>
 
-          <div className="text-sm">
+          <Button
+            color="primary"
+            className="backdrop-blur shadow-xl font-semibold"
+            as={Link}
+            href="https://github.com/kais-radwan/start-kit/fork"
+            target="_blank"
+            startContent={<IconGitFork size={20} />}
+          >
+            Fork on Github
+          </Button>
+
+          <div className="text-sm mt-14">
             Built with love by{" "}
             <Link
               href="https://x.com/kais_rad"
