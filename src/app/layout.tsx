@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background text-foreground antialiased",
+          "bg-background text-foreground",
           inter.className
         )}
       >

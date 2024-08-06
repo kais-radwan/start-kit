@@ -23,7 +23,7 @@ export default function CopyCode({ code, className, color }: Props) {
     <Code
       color={color ?? "secondary"}
       className={cn(
-        "text-foreground border backdrop-blur bg-accent/50 hover:bg-accent/70 transition-all shadow-lg flex items-center gap-2 cursor-pointer group",
+        "w-56 md:w-96 lg:min-w-max text-foreground border backdrop-blur bg-accent/50 hover:bg-accent/70 transition-all shadow-lg flex items-center gap-2 cursor-pointer group",
         className
       )}
       onClick={() => {
@@ -31,8 +31,8 @@ export default function CopyCode({ code, className, color }: Props) {
         toast.success("Copied code");
       }}
     >
-      <IconCopy size={16} />
-      <span className="opacity-75 group-hover:opacity-100 transition-all">
+      <IconCopy size={16} className="min-w-max" />
+      <span className="opacity-75 group-hover:opacity-100 transition-all truncate">
         {code}
       </span>
     </Code>

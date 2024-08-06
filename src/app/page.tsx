@@ -14,7 +14,7 @@ export default function Home() {
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
             Next.js Startkit
           </h1>
-          <p className="opacity-80 w-[90%] md:w-[80%] lg:w-[75%] text-center mb-14">
+          <p className="text-sm md:text-base opacity-80 w-[98%] md:w-[80%] lg:w-[60%] text-center mb-14">
             Kickstart your Next.js project with a{" "}
             <Code
               color="success"

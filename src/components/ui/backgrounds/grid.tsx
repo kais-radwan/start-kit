@@ -10,7 +10,7 @@ export function GridBackground({ children, className }: Props) {
   return (
     <div
       className={cn(
-        "dark:bg-grid-white/[0.05] bg-grid-black/[0.1] relative flex items-center justify-center"
+        "w-screen dark:bg-grid-white/[0.05] bg-grid-black/[0.1] relative"
       )}
     >
       {/* Radial gradient for the container to give a faded look */}

@@ -5,7 +5,7 @@ import { IconBrandGithub } from "@tabler/icons-react";
 export default function Navbar() {
   return (
     <div>
-      <div className="fixed top-0 left-0 w-full h-14 flex items-center gap-3 z-40 pl-5 pr-5">
+      <div className="fixed top-0 left-0 w-screen h-14 flex items-center gap-3 z-40 pl-5 pr-5">
         <h1 className="text-xl min-w-max text-green-400">Startkit</h1>
         <div
           className="absolute top-0 left-0 inset-0 blur-xl w-10"
